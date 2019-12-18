@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:base-ref": "ng serve --deploy-url /test-app/todo/ --base-href /test-app/todo/",
+    "build": "ng build --env=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

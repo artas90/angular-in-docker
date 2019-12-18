@@ -1,13 +1,9 @@
-<section class="todoapp">
-  <app-todo-list-header
-    (add)="onAddTodo($event)"
-  ></app-todo-list-header>
-  <app-todo-list
-    [todos]="todos"
-    (toggleComplete)="onToggleTodoComplete($event)"
-    (remove)="onRemoveTodo($event)"
-  ></app-todo-list>
-  <app-todo-list-footer
-    [todos]="todos"
-  ></app-todo-list-footer>
-</section>
+<a [routerLink]="['/main']">Main</a>
+<br>
+<a [routerLink]="['/page-1']">Page 1</a>
+<br>
+<a [routerLink]="['/page-2']">Page 2</a>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
